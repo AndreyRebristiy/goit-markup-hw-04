@@ -13,6 +13,7 @@
     --main-bg-cl: #ffffff;
     --secondary-bg-cl: #F5F4FA;
     --dark-bg-cl: #2F303A;
+    --hero-bg-cl: #C4C4C4;
 }
 
 body {
@@ -76,7 +77,6 @@ img {
 
 .header-container {
     display: flex;
-    align-items: center;
 }
 .header-nav {
     display: flex;
@@ -152,6 +152,11 @@ color: var(--secondary-txt-cl);}
 .nav-link.current {
     color: var(--accent-cl);
 }
+
+.studio-icon {
+    margin-right: 10px;
+    fill: currentColor;
+}
 /*
 ============================
 | Main section
@@ -159,10 +164,13 @@ color: var(--secondary-txt-cl);}
 */
 /* Секция Герой */
 .section-hero {
-    background: var(--dark-bg-cl);
+    background: var(--hero-bg-cl);
+    background-image: linear-gradient( rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(/img/hero/team-work.jpg);
     text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .title-hero {
     font-weight: 900;
@@ -226,6 +234,14 @@ color: var(--secondary-txt-cl);}
 }
 .benefits-item:last-child {
     margin-right: 0;
+}
+
+.benefits-icon {
+    padding: 25px 100px;
+    width: 270px;
+    height: 120px;
+    background-color:#F5F4FA;
+  
 }
 
 .benefits-upper-title {
@@ -307,7 +323,7 @@ color: var(--secondary-txt-cl);}
 }
 .team-profile {
     padding-top: 30px;
-    padding-bottom: 30px;
+    margin-bottom: 16px;
 }
 .team-upper-title {
     font-weight: 500;
@@ -324,6 +340,41 @@ color: var(--secondary-txt-cl);}
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--secondary-txt-cl); 
+}
+
+/* Social icons */
+.socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+    padding-right: 32px;
+    padding-left: 32px;
+}
+
+.socials-item:not(:last-child) {
+    margin-right: 10px;
+}
+.socials-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 44px;
+    height: 44px;
+
+    background-color: #ffffff;
+    color: #303030;
+
+    border-radius: 50%;
+}
+.socials-link:hover,
+.socials-link:focus {
+    color: #ffffff;
+    background-color: #2196F3;
+}
+.socials-icon {
+    fill: currentColor;
 }
 /*
 ============================
